@@ -94,17 +94,17 @@ img {vertical-align: middle;}
 
 <div class="mySlides fade">
   <div class="numbertext">1 / 3</div>
-  <img src="https://static1.straitstimes.com.sg/s3fs-public/styles/large30x20/public/articles/2024/05/02/sgyouth0205.jpg?VersionId=lf8E5LcgW.ORJgWD6Ijhpu1tRZ2d_uUA&itok=xnSXpDRW" style="width:100%">
+  <img src="https://www.reach.gov.sg/images/default-source/reach-images/read/reflectionsofoursingaporeconversation.jpg" style="width:100%">
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">2 / 3</div>
-  <img src="https://static1.straitstimes.com.sg/s3fs-public/styles/large30x20/public/articles/2024/03/28/NYC_Youth%20Panels%202_main.JPG?VersionId=porenv70EdCtkb_GQVMprUUfTjOH6Ruu&itok=Kf2zGiiD" style="width:100%">
+  <img src="https://scontent.fsin10-1.fna.fbcdn.net/v/t31.18172-8/28515147_10160109028175607_5499300446733944713_o.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_ohc=wwAwLud8gQwQ7kNvgE1eog9&_nc_ht=scontent.fsin10-1.fna&oh=00_AYC88IlgnwzlT8qslxlHbAcdAmTV1pH1mki_QVRVTOGp6A&oe=6679C52C" style="width:100%">
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">3 / 3</div>
-  <img src="https://onecms-res.cloudinary.com/image/upload/s--FpRnaEow--/c_fill,g_auto,h_468,w_830/fl_relative,g_south_east,l_one-cms:core:watermark:reuters,w_0.1/f_auto,q_auto/v1/one-cms/core/2023-03-02t061307z_1_lynxmpej2106a_rtroptp_3_singapore-economy-budget.jpg?itok=cj5RrKdN" style="width:100%">
+  <img src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F758638169%2F1817535950473%2F1%2Foriginal.20240503-082243?w=1000&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C2160%2C1080&s=27690f3decea5d0b91afa47bbf55111e" style="width:100%">
 </div>
 
 </div>
@@ -142,9 +142,9 @@ function showSlides() {
 </html> 
 
     """,
-    height=600,
+    height=400,
 )   
 
-            
-
-        
+st.write(
+    'Interested to find out more about other available events? Check them out on our Events page!'
+)
