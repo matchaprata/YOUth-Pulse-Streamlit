@@ -4,11 +4,10 @@ from streamlit_calendar import calendar
 mode = st.selectbox(
         "Calendar Mode:",
         (
-            "daygrid",
-            "timegrid",
-            "timeline",
-            "list",
-            "multimonth",
+            "Month",
+            "Week",
+            "Schedule",
+            "Year",
         ),
     )
 events = [
@@ -84,7 +83,7 @@ calendar_options = {
         "selectable": "true",
     }
 
-if mode == "daygrid":
+if mode == "Month":
             calendar_options = {
                 **calendar_options,
                 "headerToolbar": {
@@ -95,29 +94,19 @@ if mode == "daygrid":
                 "initialDate": "2024-05-01",
                 "initialView": "dayGridMonth",
             }
-elif mode == "timegrid":
+elif mode == "Week":
     calendar_options = {
         **calendar_options,
         "initialView": "timeGridWeek",
     }
-elif mode == "timeline":
-    calendar_options = {
-        **calendar_options,
-        "headerToolbar": {
-            "left": "today prev,next",
-            "center": "title",
-            "right": "timelineDay,timelineWeek,timelineMonth",
-        },
-        "initialDate": "2024-05-01",
-        "initialView": "timelineMonth",
-    }
-elif mode == "list":
+
+elif mode == "Schedule":
     calendar_options = {
         **calendar_options,
         "initialDate": "2024-05-01",
         "initialView": "listMonth",
     }
-elif mode == "multimonth":
+elif mode == "Year":
     calendar_options = {
         **calendar_options,
         "initialView": "multiMonthYear",
