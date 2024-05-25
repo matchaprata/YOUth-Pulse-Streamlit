@@ -12,4 +12,4 @@ with pages:
         st.radio(
             'How satisfied are you with our app features?', options=['😡', '☹️', '😀', '😍'], index=0, label_visibility='collapsed', horizontal=True
         )   
-        survey.text_area('Your feedback:')
+        survey.text_area('How did we do today?')
