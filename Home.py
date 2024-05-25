@@ -142,7 +142,7 @@ function showSlides() {
 </html> 
 
     """,
-    height=400,
+    height=420,
 )   
 
 st.write(
