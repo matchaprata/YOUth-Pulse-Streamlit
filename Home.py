@@ -9,9 +9,15 @@ import streamlit_survey as ss
 if 'login_already' not in st.session_state:
     st.session_state['login_already'] = None
 
-
+theme = st_theme()
+print(theme)
+image_dark = Image.open('logo_dark.png')
 image = Image.open('logo.png')
-st.image(image)
+
+if theme['base'] == 'light':
+    st.image(image_dark)
+else:
+    st.image(image)
 
 st.write(
     'A one-stop application for you to check out available political events happening in Singapore for youths.'
