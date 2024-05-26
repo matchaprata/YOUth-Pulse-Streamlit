@@ -20,3 +20,4 @@ else:
                 'satisfied', options=['😡', '☹️', '😀', '😍'], index=0, label_visibility='collapsed', horizontal=True
             )
             survey.text_area('How did we do today?')
+            survey.text_area('Are there any other current affairs topics you would like to see being implemented in the discussions held?')
