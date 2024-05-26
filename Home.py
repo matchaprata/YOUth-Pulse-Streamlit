@@ -1,4 +1,5 @@
 import streamlit as st
+from PIL import Image
 st.set_page_config(
     page_title='YOUth Pulse!'
 ) 
@@ -8,9 +9,9 @@ import streamlit_survey as ss
 if 'login_already' not in st.session_state:
     st.session_state['login_already'] = None
 
-st.title(":rainbow[Youth-Pulse]")
-# image = Image.open('logo.png')
-# st.image(image)
+
+image = Image.open('logo.png')
+st.image(image)
 
 st.write(
     'A one-stop application for you to check out available political events happening in Singapore for youths.'
