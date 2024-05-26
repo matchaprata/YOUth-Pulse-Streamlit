@@ -1,16 +1,22 @@
 import streamlit as st
+from streamlit_theme import st_theme
 st.set_page_config(
     page_title='YOUth Pulse!'
 ) 
 import time
 from PIL import Image
 import streamlit_survey as ss
-if 'login_already' not in st.session_state:
-    st.session_state['login_already'] = None
 
-st.title(":rainbow[Youth-Pulse]")
-# image = Image.open('logo.png')
-# st.image(image)
+theme = st_theme()
+print(theme)
+image_dark = Image.open('logo_dark.png')
+image = Image.open('logo.png')
+
+if theme['base'] == 'light':
+    st.image(image_dark)
+else:
+    st.image(image)
+    
 
 st.write(
     'A one-stop application for you to check out available political events happening in Singapore for youths.'
