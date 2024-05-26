@@ -1,5 +1,6 @@
 import streamlit as st
 from streamlit_calendar import calendar
+st.title('Events')
 if 'login_already' not in st.session_state:
     st.session_state['login_already'] = None
 if st.session_state['login_already'] == None:
