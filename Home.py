@@ -5,9 +5,12 @@ st.set_page_config(
 import time
 from PIL import Image
 import streamlit_survey as ss
+if 'login_already' not in st.session_state:
+    st.session_state['login_already'] = None
 
-image = Image.open('logo.png')
-st.image(image)
+st.title(":rainbow[Youth-Pulse]")
+# image = Image.open('logo.png')
+# st.image(image)
 
 st.write(
     'A one-stop application for you to check out available political events happening in Singapore for youths.'
