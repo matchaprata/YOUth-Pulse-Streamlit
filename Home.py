@@ -1,4 +1,5 @@
 import streamlit as st
+from streamlit_theme import st_theme
 from PIL import Image
 st.set_page_config(
     page_title='YOUth Pulse!'
