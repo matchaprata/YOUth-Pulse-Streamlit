@@ -6,7 +6,6 @@ if 'login_already' not in st.session_state:
 if st.session_state['login_already'] == None:
     st.warning("Log in First!")
 else:
-    st.title("Events")
     mode = st.selectbox(
             "Calendar Mode:",
             (   
