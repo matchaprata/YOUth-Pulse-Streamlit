@@ -140,3 +140,4 @@ else:
     if state.get("eventsSet") is not None:
             st.session_state["events"] = state["eventsSet"]
 
+# add filters to categorise (eg. environment, politics, tech)
