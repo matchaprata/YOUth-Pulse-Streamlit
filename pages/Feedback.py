@@ -1,5 +1,7 @@
 import streamlit as st
 import streamlit_survey as ss
+from itertools import cycle
+
 if 'login_already' not in st.session_state:
     st.session_state['login_already'] = None
 
@@ -18,18 +20,28 @@ with st.expander('Type of Feedback'):
     if userexp: 
         with pages:
             if pages.current == 0:
-                    survey.dateinput('Date:')
-                    st.write(
-                        'How satisfied are you with our app?')
-                    st.radio(
-                        'satisfied', options=['😡', '☹️', '😀', '😍'], index=0, label_visibility='collapsed', horizontal=True
-                    )
-                    survey.text_area('How did we do today?')
-                    survey.text_area('Are there any other current affairs topics you would like to see being implemented in the discussions held?')
-
+                survey.dateinput('Date:')
+                st.write(
+                    'How satisfied are you with our app?')
+                st.radio(
+                    'satisfied', options=['😡', '☹️', '😀', '😍'], index=0, label_visibility='collapsed', horizontal=True
+                )
+                survey.text_area('How did we do today?')
+                survey.text_area('Are there any other current affairs topics you would like to see being implemented in the discussions held?')
+                
     with col2:
         qna = st.button('Q&A')
     if qna:
         st.write(
             'hello world'
         )
+        
+    cols = cycle(st.columns(2))
+
+    for i,col in zip(range(userexp, qna), cols):
+        button_type = 'secondary'        
+        with col:   
+            st.write('')
+
+
+

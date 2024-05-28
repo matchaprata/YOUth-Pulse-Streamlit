@@ -157,5 +157,3 @@ function showSlides() {
 st.write(
     'Interested to find out more about other available events? Check them out on our Events page!'
 )
-
-# include news articles from credible news sources (mainstream), consider adding in news articles from alternative news publishers with regulations & moderations
