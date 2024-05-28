@@ -23,3 +23,6 @@ else:
             survey.text_area('Are there any other current affairs topics you would like to see being implemented in the discussions held?')
 
 # connect like-minded people through collating users' interests
+
+
+ 

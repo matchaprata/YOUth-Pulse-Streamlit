@@ -69,7 +69,7 @@ else:
                 "title": "Pre-University Seminar",
                 "color": "#3D9DF3",
                 "start": "2024-05-27",
-                "end": "2024-05-30",
+                "end": "2024-05-31",
                 "resourceId": "d",
             }
         ]
