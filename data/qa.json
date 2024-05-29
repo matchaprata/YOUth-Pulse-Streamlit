@@ -1,7 +1,7 @@
 {
   "answered": {
     "1": {
-      "section_title": "education",
+      "section_title": "Education",
       "id": 1,
       "q": {
         "1": {
@@ -21,7 +21,7 @@
       }
     },
     "2": {
-      "section_title": "environment",
+      "section_title": "Environment",
       "id": 2,
       "q": {
         "1": {
@@ -36,6 +36,26 @@
           "content": {
             "question": "Are there any efforts made by Singapore to tackle climate change?",
             "answer": "Singapore has rolled out the Green Plan, which reinforces our commitment to the 2030 Agenda and the Sustainable Development Goals adoped by the UN Member States in 2015. The Green Plan specifies targets that will enhance our food security, ensure sustainable water management, scale up deployment of clean energy, promote sustainable economic growth, green our infrastructure and industries, and position our city to be resource-efficient and climate-resilient."
+          }
+        }
+      }
+    },
+    "3": {
+      "section_title": "Budget2024",
+      "id": 2,
+      "q": {
+        "1": {
+          "id": 2.1,
+          "content": {
+            "question": "",
+            "answer": ""
+          }
+        },
+        "2": {
+          "id": 2.2,
+          "content": {
+            "question": "",
+            "answer": ""
           }
         }
       }
