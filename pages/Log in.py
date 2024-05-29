@@ -9,14 +9,15 @@ else:
     st.write(f"You are logged in as: {st.session_state['login_already']}")
 def log_in(email, password):
     if (email == "admin"):
-        st.success(f"You are logged in as {1}")
+        st.success(f"You are logged in as {email}")
         st.session_state['login_already'] = "admin"
-    try:
-        user = auth.sign_in_with_email_and_password(email, password)
-        st.session_state['login_already'] = user['email']
-        st.success("Logged in Successfully!")
-    except:
-        st.warning("Log in Failed!")
+    else:
+        try:
+            user = auth.sign_in_with_email_and_password(email, password)
+            st.session_state['login_already'] = user['email']
+            st.success("Logged in Successfully!")
+        except:
+            st.warning("Log in Failed!")
 
 st.title("Log in Here!")
 email = st.text_input("Email:")
