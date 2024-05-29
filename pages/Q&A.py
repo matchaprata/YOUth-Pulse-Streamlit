@@ -32,6 +32,11 @@ with tab1:
                     print(len(qa_data['answered']))
                     print("Send a+error to Admin")
         elif header == 'Most Interesting':
+            tempContainer = st.container(height=0, border=True)
+            with tempContainer:
+                st.write("94 people asked this question.")
+                st.write()
+                st.write()
 
 
 with tab2:
