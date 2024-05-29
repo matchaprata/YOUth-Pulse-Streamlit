@@ -26,5 +26,16 @@ else:
                 survey.text_area('How did we do today?')
                 survey.text_area('Do you have any suggestions to improve our website?')
             with tab2:
+                col1, col2, col3, col4, col5 = st.columns(5)
+                surveyType = ""
+                with col1:
+                    st.button('Education')
+                with col2:
+                    st.button('Environment')
+                with col3:
+                    st.button('Budget 2024')
+                if col1:
+                    surveyType = "Educatiom"
+
                 survey.dateinput('Date:', key="Q&A")
                 survey.text_area('Are there any other current affairs topics you would like to see being implemented in the discussions held?')
