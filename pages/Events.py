@@ -1,6 +1,13 @@
 import streamlit as st
 from streamlit_calendar import calendar
+from datetime import date
+from datetime import timedelta
+
 st.title('Events')
+
+reminder = st.button('Remind me!')
+if reminder:
+      st.write('Reminder sent. Please check your registered email!')
 if 'login_already' not in st.session_state:
     st.session_state['login_already'] = None
 if st.session_state['login_already'] == None:
@@ -139,5 +146,3 @@ else:
 
     if state.get("eventsSet") is not None:
             st.session_state["events"] = state["eventsSet"]
-
-# add filters to categorise (eg. environment, politics, tech)
