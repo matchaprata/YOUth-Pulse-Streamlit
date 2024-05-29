@@ -41,8 +41,8 @@ else:
             mystate.btn_prsd_status = [False] * 2
 
         btn_labels = ["User Experience", "Q&A"]
-        unpressed_colour = "#E8EAF6"
-        pressed_colour = "#64B5F6"
+        unpressed_colour = "#adb5bd"
+        pressed_colour = "#6f42c1"
 
         col1, col2, col3, col4 = st.columns(4)
         with col1:
@@ -60,23 +60,25 @@ else:
                         'satisfied', options=['😡', '☹️', '😀', '😍'], index=0, label_visibility='collapsed', horizontal=True
                     )
                     survey.text_area('How did we do today?')
-                    survey.text_area('Are there any other current affairs topics you would like to see being implemented in the discussions held?')
+                    survey.text_area('Do you have any suggestions to improve our website?')
                 ChangeButtonColour(btn_labels, mystate.btn_prsd_status)
                 
                    
         
         if col22:
-            st.write(
-                'hello world'
-            )
-            ChangeButtonColour(btn_labels, mystate.btn_prsd_status)
-            
-        # cols = cycle(st.columns(2))
-
-        # for i,col in zip(range(userexp, qna), cols):
-        #     button_type = 'secondary'        
-        #     with col:   
-        #         st.write('')
+            with pages:
+                if pages.current == 0:
+                    survey.dateinput('Date:')
+                    st.write(
+                        'How satisfied are you with our app?')
+                    st.radio(
+                        'satisfied', options=['😡', '☹️', '😀', '😍'], index=0, label_visibility='collapsed',
+                        horizontal=True
+                    )
+                    survey.text_area('How did we do today?')
+                    survey.text_area(
+                        'Are there any other current affairs topics you would like to see being implemented in the discussions held?')
+                ChangeButtonColour(btn_labels, mystate.btn_prsd_status)
 
 
 
