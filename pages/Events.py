@@ -5,14 +5,14 @@ from datetime import timedelta
 
 st.title('Events')
 
-reminder = st.button('Remind me!')
-if reminder:
-      st.write('Reminder sent. Please check your registered email!')
 if 'login_already' not in st.session_state:
     st.session_state['login_already'] = None
 if st.session_state['login_already'] == None:
     st.warning("Log in First!")
 else:
+    reminder = st.button('Remind me!')
+    if reminder:
+        st.write('Reminder sent. Please check your registered email!')
     mode = st.selectbox(
             "Calendar Mode:",
             (   
