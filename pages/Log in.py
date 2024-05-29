@@ -1,5 +1,6 @@
 import streamlit as st
 import pyrebase
+
 firebase = pyrebase.initialize_app(st.secrets['firebaseConfig'])
 auth = firebase.auth()
 if 'login_already' not in st.session_state:
