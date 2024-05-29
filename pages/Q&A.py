@@ -10,7 +10,7 @@ st.title('Q&A')
 # This static filter
 tab1, tab2, tab3, tab4 = st.tabs(["Index", "Education", "Environment", f"Budget {datetime.today().year}"])
 with tab1:
-    allHeader = ['Latest', 'Most Interesting']
+    allHeader = ['Recently Answered', 'Most Interesting']
     for header in allHeader:
         createSection(header)
 with tab2:
