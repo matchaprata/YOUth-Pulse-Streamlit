@@ -2,7 +2,7 @@ import streamlit as st
 from datetime import datetime
 import json as json
 
-file = open('./data/data.json')
+file = open('./data/qa.json')
 qa_data = json.load(file)
 
 # Custom Filter
@@ -20,9 +20,11 @@ with tab1:
         createSection(header)
         if header == 'Recently Answered':
             for sections in qa_data['answered']:
+                latest_id = 10 * (sections['latest'] - sections['id'])
+                latest_content = sections['q'][f'{latest_id}']
                 tempContainer = st.container(height=0, border=True)
                 with tempContainer:
-                    st.write()
+                    st.write(latest_content['q'])
 
 with tab2:
     allHeader = []
