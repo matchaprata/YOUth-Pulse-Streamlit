@@ -35,7 +35,11 @@ else:
                 with col3:
                     st.button('Budget 2024')
                 if col1:
-                    surveyType = "Educatiom"
+                    surveyType = "Education"
+                if col2:
+                    surveyType = "Environment"
+                if col3:
+                    surveyType = "Budget 2024"
 
                 survey.dateinput('Date:', key="Q&A")
-                survey.text_area('Are there any other current affairs topics you would like to see being implemented in the discussions held?')
+                survey.text_area('Is there anything you would like to clarify about in your chosen category?')
