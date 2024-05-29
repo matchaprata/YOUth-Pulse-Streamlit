@@ -43,22 +43,22 @@
       ]
     },
     {
-      "section_title": "Budget2024",
+      "section_title": "Budget 2024",
       "id": 3,
       "latest": 3.2,
       "q": [
         {
           "id": 3.1,
           "content": {
-            "question": "",
-            "answer": ""
+            "question": "What has been done to improve social mobility?",
+            "answer": "The Government has recently rolled out ComLink+ Progress Packages to support lower-income families with young children to improve preschool education, employment and financial stability, and save up for home ownership."
           }
         },
         {
           "id": 3.2,
           "content": {
-            "question": "",
-            "answer": ""
+            "question": "How has the Government supported seniors for their retirement?",
+            "answer": "The Government has implemented the Majulah Package for 1.6 million Singaporeans born in 1973 or earlier to support retirement and healthcare needs. There is also increased quaterly payments from the Silver Support Scheme by 20% and raise qualifying per capita household income threshold to $2300."
           }
         }
       ]
@@ -72,14 +72,14 @@
         {
           "id": 1.1,
           "content": {
-            "question": "",
+            "question": "Is it really necessary to strictly follow school rules?",
             "answer": ""
           }
         },
         {
           "id": 1.2,
           "content": {
-            "question": "",
+            "question": "As an adult, would you go through today's education system in Singapore?",
             "answer": ""
           }
         }
@@ -92,14 +92,14 @@
         {
           "id": 2.1,
           "content": {
-            "question": "",
+            "question": "Should we fully transition to other forms of energy, away from fossil fuels?",
             "answer": ""
           }
         },
         {
           "id": 2.2,
           "content": {
-            "question": "",
+            "question": "How can the government better educate the public about sustainability in Singapore?",
             "answer": ""
           }
         }
@@ -112,14 +112,14 @@
         {
           "id": 3.1,
           "content": {
-            "question": "",
+            "question": "Why wasn't there any budget set aside for climate change as a nationwide effort?",
             "answer": ""
           }
         },
         {
           "id": 3.2,
           "content": {
-            "question": "",
+            "question": "Why is there an imbalance between budget set aside for youths and seniors?",
             "answer": ""
           }
         }
