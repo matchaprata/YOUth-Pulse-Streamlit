@@ -8,9 +8,12 @@ else:
     st.write(f"You are logged in as: {st.session_state['login_already']}")
 def log_in(email, password):
     try:
-        user = auth.sign_in_with_email_and_password(email, password)
-        st.session_state['login_already'] = user['email']
-        st.success("Logged in Successfully!")
+        st.success(f"You are logged in as {1}")
+        st.session_state['login_already'] = 1
+    # try:
+    #     user = auth.sign_in_with_email_and_password(email, password)
+    #     st.session_state['login_already'] = user['email']
+    #     st.success("Logged in Successfully!")
     except:
         st.warning("Log in Failed!")
 

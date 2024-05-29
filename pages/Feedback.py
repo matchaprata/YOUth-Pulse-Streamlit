@@ -4,23 +4,20 @@ import streamlit.components.v1 as components
 from itertools import cycle
 
 def ChangeButtonColour(widget_label, prsd_status):
-    btn_bg_colour = pressed_colour if prsd_status == True else unpressed_colour
-    htmlstr = f"""
-        <script>
-            var elements = window.parent.document.querySelectorAll('button');
-            for (var i = 0; i < elements.length; ++i) {{ 
-                if (elements[i].innerText == '{widget_label}') {{ 
-                    elements[i].style.background = '{btn_bg_colour}'
-                }}
-            }}
-        </script>
-        """
-    components.html(f"{htmlstr}", height=0, width=0)
-    print(components.html(f"{htmlstr}", height=0, width=0))
-
-def ChkBtnStatusAndAssignColour():
+    htmlstr = ""
     for i in range(len(btn_labels)):
-        ChangeButtonColour(btn_labels[i], mystate.btn_prsd_status[i])
+        btn_bg_colour = pressed_colour if prsd_status[i] == True else unpressed_colour
+        htmlstr += f"""
+            <script>
+                var elements = window.parent.document.querySelectorAll('button');
+                for (var i = 0; i < elements.length; ++i) {{ 
+                    if (elements[i].innerText == '{widget_label[i]}') {{ 
+                        elements[i].style.background = '{btn_bg_colour}'
+                    }}
+                }}
+            </script>
+            """
+    components.html(f"{htmlstr}", height=0, width=0)
 
 def btn_pressed_callback(i):
     mystate.btn_prsd_status = [False] * len(btn_labels)
@@ -52,7 +49,6 @@ else:
             col11 = st.button(btn_labels[0], key="b1", on_click=btn_pressed_callback, args=(1,) )
         with col2:
             col22 = st.button(btn_labels[1], key="b2", on_click=btn_pressed_callback, args=(2,) )
-        ChkBtnStatusAndAssignColour()
 
         if col11:
             with pages:
@@ -65,12 +61,15 @@ else:
                     )
                     survey.text_area('How did we do today?')
                     survey.text_area('Are there any other current affairs topics you would like to see being implemented in the discussions held?')
+                ChangeButtonColour(btn_labels, mystate.btn_prsd_status)
+                
                    
         
         if col22:
             st.write(
                 'hello world'
             )
+            ChangeButtonColour(btn_labels, mystate.btn_prsd_status)
             
         # cols = cycle(st.columns(2))
 
