@@ -34,9 +34,9 @@ with tab1:
         elif header == 'Most Interesting':
             tempContainer = st.container(height=0, border=True)
             with tempContainer:
-                st.write("94 people asked this question.")
-                st.write()
-                st.write()
+                st.caption("94 people asked this question.")
+                st.write("Q: Where does my money go?")
+                st.write("A: 20% of your income contributes to your CPF account, leaving you with 80% of your income to spend on")
 
 
 with tab2:
