@@ -1,4 +1,4 @@
-import streamlit as st
+ import streamlit as st
 import pyrebase
 
 firebase = pyrebase.initialize_app(st.secrets['firebaseConfig'])
